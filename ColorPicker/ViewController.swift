@@ -98,8 +98,18 @@ class ViewController: UIViewController {
         updateColor()
     }
     
+    @IBAction func copyColorCode(_ sender: UIButton) {
+        let redValue:String = String(Int(redSlider.value), radix:16)
+        let greenValue:String = String(Int(greenSlider.value), radix:16)
+        let blueValue:String = String(Int(blueSlider.value), radix:16)
+        
+        UIPasteboard.general.string = redValue+greenValue+blueValue
+    }
+    
     @IBAction func sliderChanged(_ sender: UISlider) {
         updateColor()
     }
+
+    
 }
 
