@@ -11,3 +11,6 @@ To tap Reset Button, all of switch and slider will be initialized.
 - Slider
 - View
 - Switch
+
+## Demo
+![result](https://github.com/Shiozaki-s21/iOSColorPicker/blob/media/demo1.gif)
