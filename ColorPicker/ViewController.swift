@@ -50,24 +50,24 @@ class ViewController: UIViewController {
         var blue:CGFloat = 0
         
         if redSwitch.isOn {
-            red = CGFloat(redSlider.value)
+            red = CGFloat(redSlider.value / 255)
         }
         
         if greenSwitch.isOn {
-            green =  CGFloat(greenSlider.value)
+            green =  CGFloat(greenSlider.value / 255)
         }
         
         if blueSwitch.isOn {
              blue =
-                CGFloat(blueSlider.value)
+                CGFloat(blueSlider.value / 255)
         }
         
         let bgColor = UIColor(red: red, green: green, blue: blue, alpha: 1.0)
         colorView.backgroundColor = bgColor
         
-        redLabel.text = String(Int(redSlider.value * 100))
-        greenLabel.text = String(Int(greenSlider.value * 100))
-        blueLabel.text = String(Int(blueSlider.value * 100))
+        redLabel.text = String(Int(redSlider.value))
+        greenLabel.text = String(Int(greenSlider.value))
+        blueLabel.text = String(Int(blueSlider.value))
     }
 
     @IBAction func switchChanged(_ sender: UISwitch) {
