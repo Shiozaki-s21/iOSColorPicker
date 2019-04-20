@@ -30,7 +30,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        redLabel.adjustsFontSizeToFitWidth = true
         colorView.layer.borderWidth = 5.0
         colorView.layer.cornerRadius = 20
         colorView.layer.borderColor = UIColor.black.cgColor
