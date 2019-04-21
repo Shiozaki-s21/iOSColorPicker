@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad12_9rounded" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,37 +15,29 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorPicker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eiN-ym-Kaf">
-                                <rect key="frame" x="156.5" y="587" width="62" height="42"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <rect key="frame" x="487" y="1272" width="50" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
                                     <action selector="resetButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tmk-Fq-C2j"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PG-ks-Mzz">
-                                <rect key="frame" x="112.5" y="551" width="150" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Copy Color Code"/>
-                                <connections>
-                                    <action selector="copyColorCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7U-fy-TWU"/>
-                                </connections>
-                            </button>
-                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="35Z-NJ-PAR">
-                                <rect key="frame" x="38" y="74" width="299" height="165"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="35Z-NJ-PAR">
+                                <rect key="frame" x="8" y="78" width="1008" height="840"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Uqs-lP-dgu">
-                                <rect key="frame" x="30" y="318" width="315" height="129"/>
+                                <rect key="frame" x="30" y="997" width="964" height="129"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="d93-6k-VTm">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="964" height="31"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dxe-GW-2Tv">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="964" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pBg-ch-5qt">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -54,13 +46,13 @@
                                                         </connections>
                                                     </switch>
                                                     <slider opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Hcr-Gy-wiu">
-                                                        <rect key="frame" x="64" y="0.0" width="159" height="32"/>
+                                                        <rect key="frame" x="64" y="0.0" width="808" height="32"/>
                                                         <connections>
                                                             <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="E4E-UV-oGl"/>
                                                         </connections>
                                                     </slider>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="i8a-vI-qyt">
-                                                        <rect key="frame" x="238" y="0.0" width="77" height="31"/>
+                                                        <rect key="frame" x="887" y="0.0" width="77" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TsA-TW-bs3">
                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="31"/>
@@ -87,10 +79,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="AUo-eh-Wvm">
-                                        <rect key="frame" x="0.0" y="49" width="315" height="31"/>
+                                        <rect key="frame" x="0.0" y="49" width="964" height="31"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="5O5-jt-7DO">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="964" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FB5-LK-PWe">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -99,13 +91,13 @@
                                                         </connections>
                                                     </switch>
                                                     <slider opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="OSj-6m-csd">
-                                                        <rect key="frame" x="64" y="0.0" width="159" height="32"/>
+                                                        <rect key="frame" x="64" y="0.0" width="808" height="32"/>
                                                         <connections>
                                                             <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="VXa-3h-dyg"/>
                                                         </connections>
                                                     </slider>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="mX5-Ah-Bzu">
-                                                        <rect key="frame" x="238" y="0.0" width="77" height="31"/>
+                                                        <rect key="frame" x="887" y="0.0" width="77" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbh-m9-nIR">
                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="31"/>
@@ -129,10 +121,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="e4S-KZ-0Zg">
-                                        <rect key="frame" x="0.0" y="98" width="315" height="31"/>
+                                        <rect key="frame" x="0.0" y="98" width="964" height="31"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="gEl-H5-Ene">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="31"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="964" height="31"/>
                                                 <subviews>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RLV-Eo-ndZ">
                                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -141,13 +133,13 @@
                                                         </connections>
                                                     </switch>
                                                     <slider opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="Sf2-00-0T0">
-                                                        <rect key="frame" x="64" y="0.0" width="159" height="32"/>
+                                                        <rect key="frame" x="64" y="0.0" width="808" height="32"/>
                                                         <connections>
                                                             <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="8um-ek-ciI"/>
                                                         </connections>
                                                     </slider>
                                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="pzG-CA-YQF">
-                                                        <rect key="frame" x="238" y="0.0" width="77" height="31"/>
+                                                        <rect key="frame" x="887" y="0.0" width="77" height="31"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skc-k1-Zvf">
                                                                 <rect key="frame" x="0.0" y="0.0" width="17" height="31"/>
@@ -175,6 +167,14 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0PG-ks-Mzz">
+                                <rect key="frame" x="419" y="1230" width="186" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Copy Color Code"/>
+                                <connections>
+                                    <action selector="copyColorCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i7U-fy-TWU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>

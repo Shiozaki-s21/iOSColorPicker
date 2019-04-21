@@ -14,6 +14,7 @@
 		0C0D15DC2265308B00C4C1A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C0D15DA2265308B00C4C1A3 /* LaunchScreen.storyboard */; };
 		0C0D15E72265308C00C4C1A3 /* ColorPickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D15E62265308C00C4C1A3 /* ColorPickerTests.swift */; };
 		0C0D15F22265308C00C4C1A3 /* ColorPickerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0D15F12265308C00C4C1A3 /* ColorPickerUITests.swift */; };
+		0CF651ED226BBE67000EF44F /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF651EC226BBE67000EF44F /* TitleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0C0D15ED2265308C00C4C1A3 /* ColorPickerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ColorPickerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C0D15F12265308C00C4C1A3 /* ColorPickerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerUITests.swift; sourceTree = "<group>"; };
 		0C0D15F32265308C00C4C1A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CF651EC226BBE67000EF44F /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				0C0D15D12265308B00C4C1A3 /* AppDelegate.swift */,
 				0C0D15D32265308B00C4C1A3 /* ViewController.swift */,
 				0C0D15D52265308B00C4C1A3 /* Main.storyboard */,
+				0CF651EC226BBE67000EF44F /* TitleViewController.swift */,
 				0C0D15D82265308B00C4C1A3 /* Assets.xcassets */,
 				0C0D15DA2265308B00C4C1A3 /* LaunchScreen.storyboard */,
 				0C0D15DD2265308B00C4C1A3 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				0C0D15D42265308B00C4C1A3 /* ViewController.swift in Sources */,
 				0C0D15D22265308B00C4C1A3 /* AppDelegate.swift in Sources */,
+				0CF651ED226BBE67000EF44F /* TitleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
