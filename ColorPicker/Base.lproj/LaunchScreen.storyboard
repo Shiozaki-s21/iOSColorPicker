@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="ipad11_0rounded" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,24 +15,40 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chameleon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.050000000000000003" translatesAutoresizingMaskIntoConstraints="NO" id="tqn-Zm-fph">
-                                <rect key="frame" x="20" y="24" width="794" height="1150"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="200"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chameleon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-ug-rDs">
+                                <rect key="frame" x="20" y="845" width="413" height="61"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_chameleon" translatesAutoresizingMaskIntoConstraints="NO" id="84M-pb-awF">
+                                <rect key="frame" x="15" y="194" width="424" height="592"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xR4-ug-rDs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jhh-Je-Zbw"/>
+                            <constraint firstItem="xR4-ug-rDs" firstAttribute="top" secondItem="84M-pb-awF" secondAttribute="bottom" constant="59" id="Jyw-4w-6oO"/>
+                            <constraint firstItem="84M-pb-awF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="TMQ-q0-XeP"/>
+                            <constraint firstItem="xR4-ug-rDs" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="YHQ-WV-bIy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xR4-ug-rDs" secondAttribute="trailing" constant="20" id="arW-kl-HeW"/>
+                            <constraint firstItem="84M-pb-awF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="auQ-r4-stg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="84M-pb-awF" secondAttribute="trailing" constant="14" id="gik-Fa-59k"/>
+                            <constraint firstItem="84M-pb-awF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="nrm-L4-ogn"/>
+                            <constraint firstItem="84M-pb-awF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zCH-M7-uPW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="51.798561151079141" y="374.3718592964824"/>
+            <point key="canvasLocation" x="48.75" y="373.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo_chameleon" width="500" height="500"/>
+    </resources>
 </document>
